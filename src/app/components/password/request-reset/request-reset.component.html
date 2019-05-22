@@ -1,0 +1,15 @@
+<div class="mt-4 col-8 offset-2">
+  <div class="card">
+      <div class="card-header">Reset Password </div>
+      <div class="card-body">
+          <form #requestResetForm=ngForm (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email" [(ngModel)]="form.email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required >
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="!requestResetForm.valid" >Send Link</button>
+                <a routerLink="/login" type="button" class="btn btn-primary float-right">Login</a>
+          </form> 
+      </div>
+  </div>
+</div>

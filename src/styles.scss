@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import "~ng-snotify/styles/material.css";
+body {
+    width:100vw;
+    height:100vh;
+}
+
+app-root {
+    width:100vw;
+    height:100vh;
+}
+
+.ng-invalid:not(form){
+    border:1px solid red;
+}
+
+.ng-valid:not(form){
+    border:1px solid green;
+}
